@@ -11,12 +11,17 @@
   
 
   <!-- In a view with a dropdown -->
-	<ul class="dropdown-menu">
-	  <% Refinery::I18n.frontend_locales.each do |frontend_locale| %>
-	    <li>
-	      <%= link_to Refinery::I18n.locales[frontend_locale], {:locale => frontend_locale} %>
-	    </li>
-	  <% end %>
+	<ul class="right">
+		<li class="has-dropdown">
+			<a href="#"><i class="fa fa-globe fa-2x"></i></a>	
+			<ul class="dropdown">
+				<% Refinery::I18n.frontend_locales.each do |frontend_locale| %>
+			    <li>
+			      <%= link_to Refinery::I18n.locales[frontend_locale], {:locale => frontend_locale} %>
+			    </li>
+			  	<% end %>
+			</ul>
+		</li>
 	</ul>
 	</section>
 </nav>

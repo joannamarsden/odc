@@ -1,5 +1,18 @@
+<div class="footer-menu">
 <%= footer_menu.to_html %>
-<p>
+</div>
+
+<div class="footer-menu">
+	<ul>
+		<li><a href="https://www.facebook.com/operadacamera"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+		<li><a href="https://twitter.com/OperadaCamera"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+		<li><a href="https://www.youtube.com/user/OperadaCameraMTL"><i class="fa fa-youtube-square fa-2x"></i></a></li>
+		<li><i class="fa fa-envelope-o fa-2x"></i></li>
+	</ul>
+
+
+<p><small>
   <%= t('.copyright', :year => Time.now.year,
                       :site_name => Refinery::Core.site_name) %>
-</p>
+</small></p>
+</div>

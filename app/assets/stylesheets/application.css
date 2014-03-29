@@ -31,8 +31,21 @@ header {
     @include grid-column(3);
   }
 }
-footer {
+
+
+.footer-menu ul {
+	text-align: center;
 }
+
+.footer-menu li {
+	display: inline;
+	padding: .2em 1em;
+}
+
+.footer-menu p {
+	text-align: center;
+}
+
 .top-bar {
   .title-area { z-index: 2; }
 }
