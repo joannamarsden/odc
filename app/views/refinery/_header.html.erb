@@ -7,7 +7,16 @@
   </ul>
 
   <section class="top-bar-section" id="menu">
-    <%= zurb_menu(refinery_menu_pages, list_tag_css: 'right').to_html %>
-  </section>
+    <%= zurb_menu(refinery_menu_pages, list_tag_css: 'left').to_html %>
+  
 
+  <!-- In a view with a dropdown -->
+	<ul class="dropdown-menu">
+	  <% Refinery::I18n.frontend_locales.each do |frontend_locale| %>
+	    <li>
+	      <%= link_to Refinery::I18n.locales[frontend_locale], {:locale => frontend_locale} %>
+	    </li>
+	  <% end %>
+	</ul>
+	</section>
 </nav>
