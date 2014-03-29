@@ -13,7 +13,13 @@
 
   <body>
 
+    <div>
     <%= yield %>
     <%= javascript_include_tag "application" %>
+    </div>
+    
+    <div id="footer">
+      <%= render 'refinery/footer' -%>
+    </div>
   </body>
 </html>
