@@ -16,22 +16,23 @@
  *= require_tree .
  */
 
-// RefineryCMS Customization
-header {
-}
-#page {
-  @include grid-row();
-  #body {
-    @include grid-column(9);
-  }
-  .no_side_body #body {
-    @include grid-column(12);
-  }
-  #side_body {
-    @include grid-column(3);
-  }
-}
 
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+.footer, .push {
+	height: 4em;
+	clear: both;
+}
 
 .footer-menu ul {
 	text-align: center;
@@ -48,4 +49,12 @@ header {
 
 .top-bar {
   .title-area { z-index: 2; }
+}
+
+.centeredimg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
