@@ -51,10 +51,15 @@ html, body {
   .title-area { z-index: 2; }
 }
 
-.centeredimg {
+.headerimg {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2em;
 	padding-bottom: 2em;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
 }
