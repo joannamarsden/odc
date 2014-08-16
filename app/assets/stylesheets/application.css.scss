@@ -99,3 +99,49 @@ footer {
 .footer-menu p {
 	text-align: center;
 }
+
+
+
+
+
+ #player {
+    width: 580px;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    padding: 5px;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.youtube .carousel {
+    width: 230px;
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    right: 0px;
+    z-index: 3;
+}
+
+.youtube .thumbnail {
+    margin: 2px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.youtube iframe.player {
+    width: 338px;
+    height: 278px;  
+    overflow: auto;
+    border: 0;
+}
+.yt-descript {
+    color: #000;   
+    display:block;
+    height:100px;
+}
+.carItemContain{
+    
+    height:100px;
+}
+
