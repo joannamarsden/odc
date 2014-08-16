@@ -1,0 +1,101 @@
+@import 'foundation_and_overrides'; 
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require refinery/formatting
+ *= require refinery/theme
+ *= require_self
+ *= require_tree .
+ */
+
+@import url(//fonts.googleapis.com/css?family=Crimson+Text);
+@import url(//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import "font-awesome";
+
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+header {
+}
+#page {
+  @include grid-row();
+  #body {
+    @include grid-column(9);
+  }
+  .no_side_body #body {
+    @include grid-column(12);
+  }
+  #side_body {
+    @include grid-column(3);
+  }
+}
+footer {
+}
+.top-bar {
+  .title-area { z-index: 2; }
+}
+
+.headerimg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+#mail-chimp-form {
+	text-align: center;
+	padding-top:1%;
+}
+
+#mce-EMAIL {
+	max-width:33%;
+	display:inline !important;
+}
+
+#footer-wrapper {
+	background-color: white !important;
+	padding-bottom: 1%;
+	padding-top: 1%;
+}
+
+.footer, .push {
+	height: 4em;
+	clear: both;
+}
+
+
+.footer-menu ul {
+	text-align: center;
+}
+
+.footer-menu li {
+	display: inline;
+	margin: .2em 1em;
+}
+
+.footer-menu p {
+	text-align: center;
+}
