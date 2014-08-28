@@ -44,6 +44,8 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
+gem 'fog'
+
 # Refinery CMS
 gem 'refinerycms', '~> 2.1.0'
 gem 'refinerycms-i18n'

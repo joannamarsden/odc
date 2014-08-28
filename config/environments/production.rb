@@ -45,6 +45,9 @@ Odc::Application.configure do
   # Enable serving of images, stylesheets, and JavaScripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
 
+  # S3 available in production
+  Refinery::Core.config.s3_backend = true
+
   # Precompile additional assets with modernizr
  config.assets.precompile += %w( vendor/modernizr.js )
 
