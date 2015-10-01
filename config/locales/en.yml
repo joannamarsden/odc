@@ -4,7 +4,10 @@
 en:
   hello: "Hello world"
   subscribe_to_our_list: "Subscribe to our list"
-  caption1: '"Opera da Camera’s Cendrillon offers the best of La Belle Époque.” Michelle White, Bloody Underrated, 2014'
-  caption2: 'This was a thrilling new experience, and one looks forward to future productions of this new company. Ossama el Naggar, Opera Canada, 2013'
-  caption3: "About the ensemble"
-  caption4: "In concert"
+  caption1_html: 'Visit %{link} to purchase your tickets today!'
+  caption2_html: Visit %{link} to purchase your tickets today!'
+  caption3: '"It was quite a feat for the young company to pull of this production of Xerxès with such aplomb..." – Ossama El-Naggar, Opera Canada, Summer 2015'
+  caption4: '"This Figaro is a delight, may we have many more like it" – Lev Bratishenko, Roverarts.com'
+  home_heading: For the first time ever Opera da Camera will be presenting two operas during the upcoming season!
+  home_paragraph: "Featured operas are Humperdinck's fairy-tale opera %{hansel} (October 17, 18, 22 and 24, 2015) and Mozart's romantic comedy %{cosi} (February 13, 14, 20 and 22, 2016). Please visit %{brownpapertickets} to buy a season %{subscription} or tickets to %{hansel} and %{cosi}."
+  home_support: "Please visit our %{link} page to find out about more ways that you can help Opera da Camera achieve it’s mission to make opera open and accessible to the public."

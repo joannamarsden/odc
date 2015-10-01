@@ -1,21 +1,18 @@
 <ul class="slider" data-orbit data-options="slide_number: false;">
   <li>
+    <%= image_tag "Hansel_OdC_Website_Banner.jpg" %>
+    <div class="orbit-caption">
+      <%= (t :'caption1_html', :link => link_to("brownpapertickets.ca", "http://www.brownpapertickets.com/event/2126502")).html_safe %>
+    </div>
+  </li>
+  <li>
+    <%= image_tag "Cosi_OdC_Website_Banner.jpg" %>
+    <div class="orbit-caption">
+      <%= (t :'caption2_html', :link => link_to("brownpapertickets.ca", "http://www.brownpapertickets.com/event/2272721")).html_safe %>
+    </div>
+  </li>
+  <li>
     <%= image_tag "Serse.jpg" %>
-  </li>
-  <li>
-    <%= image_tag "Cendrillon-Slider.jpg" %>
-    <div class="orbit-caption">
-      <%= (t :'caption1') %>
-    </div>
-  </li>
-  <li>
-    <%= image_tag "OdC-Ensemble.jpg" %>
-    <div class="orbit-caption">
-      <%= (t :'caption2') %>
-    </div>
-  </li>
-  <li>
-    <%= image_tag "OdC-Ensemble-3.jpg" %>
     <div class="orbit-caption">
       <%= (t :'caption3') %>
     </div>
@@ -26,5 +23,14 @@
       <%= (t :'caption4') %>
     </div>
   </li>
-
 </ul>
+
+<div class="row">
+  <h1><%= (t :'home_heading') %></h1>
+  <p><%= (t :'home_paragraph', :hansel => link_to("Hänsel und Gretel", "http://www.brownpapertickets.com/event/2126502/"),
+                               :cosi => link_to("Così fan tutte", "http://www.brownpapertickets.com/event/2272721/"),
+                               :brownpapertickets => link_to("brownpapertickets.ca", "http://brownpapertickets.ca/"),
+                               :subscription => link_to("season subscription", "http://www.brownpapertickets.com/event/2272730")
+  ).html_safe %></p>
+  <p><%= (t :'home_support', :link => link_to("support", "http://www.operadacamera/support")).html_safe  %></p>
+</div>
